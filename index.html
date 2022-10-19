@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            background-image: url(/restoran.webp);
+        }
+
+        #list {
+
+            font-size: 40px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Task 1</h1>
+    <div class="block">
+        <div id="container"></div>
+    </div>
+    <div class="container">
+        <h1>MENU</h1>
+        <div id="list"></div>
+    </div>
+
+
+
+
+    <script>
+
+
+        for (i = 0; i <= 7; i++) {
+            for (j = 0; j <= 7; j++) {
+                document.getElementById('container').innerHTML += (` ${i} * ${j} = ${i * j} <br>`);
+
+            }
+
+        }
+
+
+
+        let menu = [
+            { dish: 'soup', prise: 200 },
+            { dish: 'salad', prise: 150 },
+            { dish: 'beef', prise: 300 },
+            { dish: 'turkey', prise: 250 },
+            { dish: 'tea', prise: 100 },
+            { dish: 'pork steak', prise: 300 },
+            { dish: 'lamb meet', prise: 400 },
+            { dish: 'salmone in sauce', prise: 200 },
+        ]
+
+        for (let i = 0; i < menu.length; i++) {
+            document.getElementById('list').innerHTML += `${menu[i].dish} : ${menu[i].prise} рублей <br>`
+        }
+
+
+
+
+
+
+        //////////////////////////
+
+
+
+
+        // let userAge = prompt('age of user');
+
+        // if (userAge < 18) {
+        //     alert('Access dinied')
+        // } else {
+        //     alert('Access granted')
+        // }
+
+        /////////////////////////////////
+
+        // let id = prompt('введите jd товара');
+
+        // switch (id) {
+        //     case 'id === 1':
+        //         alert('В наличие 10 штук')
+        //         break;
+        //     case 'id === 2':
+        //         alert('В наличие 256 штук')
+        //         break;
+        //     case 'id === 3':
+        //         alert('В наличие 53 штуки')
+        //         break;
+        //     case 'id === 4':
+        //         alert('В наличие 3 штуки')
+        //         break;
+        //     default:
+        //         alert('Нет в наличие')
+        // } //
+
+        //////////////////////////
+
+        let gender = prompt('user gender');
+        if (gender === 'm') {
+            alert('male')
+        } else if (gender === 'f') {
+            alert('female')
+        } else {
+            alert('you are not confirmed')
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
